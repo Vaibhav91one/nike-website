@@ -1,15 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {Hero, Services,SuperQuality,PopularProducts,CustomerReviews, SpecialOffer, Footer} from "./sections"
 
-function App() {
+const App = () =>(
+  <main className="relative">
+    Nav
+    <section className="xl:padding-1 wide:padding-r padding-p">
+     <Hero/>
+    </section>
+     <section className="padding">
+      <PopularProducts/>
+     </section>
+     <section className="padding">
+      <SuperQuality/>
+     </section>
+     <section className="padding-x py-10">
+      <Services/>
+     </section>
+     <section className="padding">
+      <SpecialOffer/>
+     </section>
+     <section className="bg-pale-blue padding">
+      <CustomerReviews/>
+     </section>
+     <section className="padding-x sm:py-32 py-16 w-full">
+      <Subscribe/>
+     </section>
+     <section className="bg-black padding-x padding-t py-8">
+      <Footer/>
+     </section>
 
-  return (
-    <h1 className="text-3xl text-center font-bold underline">
-      Hello world!
-    </h1>
-  )
-}
+  </main>
+);
 
-export default App
+export default App;
