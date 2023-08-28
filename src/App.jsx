@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 const App = () =>(
   <main className="relative">
     <Navbar/>
-    <section className="xl:padding-1 wide:padding-r padding-p">
+    <section className="xl:padding-1 wide:padding-r padding-p padding">
      <Hero/>
     </section>
      <section className="padding">
