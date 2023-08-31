@@ -4,23 +4,23 @@ import { navLinks } from "../constants";
 
 const Navbar = () => {
   return (
-    <header className='padding-x py-8 absolute z-10 w-full'>
+    <header className='padding-x py-8 fixed z-10 w-full backdrop-blur-md '>
         <nav className='flex justify-between items-center max-container'>
             <a href="/">
-                <img src={headerLogo} alt="Logo" width={130} height={29}/>
+                <img src={headerLogo} alt="Logo" width={130} height={29} />
             </a>
             <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden'>
                 {navLinks.map((item) => (
-                    <li key={item.label}>
+                    <li className='hover:scale-105 transition-all' key={item.label}>
                         <a href={item.href}
-                        className='font-montserrat leading-normal text-lg text-slate-gray'>
+                        className='font-montserrat leading-normal text-lg text-black hover:scale-150'>
                           {item.label}
                         </a>
                     </li>
                 ))}
             </ul>
             <div>
-                <img src={hamburger} alt="Hamburger" width={25} height={25} className='hidden max-lg:block'/>
+                <img src={hamburger} alt="Hamburger" width={25} height={25} className='hidden max-lg:block '/>
             </div>
         </nav>
     </header>
