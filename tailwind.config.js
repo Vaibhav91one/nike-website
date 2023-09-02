@@ -17,6 +17,16 @@ export default {
       '8xl': ['96px', '106px']
     },
     extend: {
+      keyframes:{
+          float:{
+            "0%": {transform: 'translateY(0%)'},
+            "50%": {transform: 'translateY(6%)'},
+            "100%": {transform: 'translateY(0%)'},
+          }
+      },
+      animation:{
+          "floating": 'float 2s infinite',
+      },
       fontFamily: {
         palanquin: ['Palanquin', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
